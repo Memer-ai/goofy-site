@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Loading</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap'); /* Scary font */
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: red;
+            font-family: 'Creepster', cursive;
+            font-size: 72px;
+            text-shadow: 0 0 20px red, 0 0 30px red;
+            animation: flicker 0.1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "index1.html";  // Redirect to another HTML page
+        }, 1000);  // 1000 milliseconds = 1/7th of a second
+    </script>
+</head>
+<body>
+    <div>
+        LOADING DOWNLOADED MALWARE SUCCESSFULLY.
+    </div>
+</body>
+</html>
